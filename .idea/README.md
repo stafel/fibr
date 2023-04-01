@@ -10,7 +10,7 @@ to download, install and use the Alpaca and Llama language models locally using:
 * [llama.cpp](https://github.com/ggerganov/llama.cpp)
 * [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp)
 
-To run these model in a distributed system in a self hosted enviornment (e.g Kubernetes, Docker),
+To run these models in a distributed system in a self hosted enviornment (e.g Kubernetes, Docker),
 we can implement something similar using golang. 
 
 ## Benefits
