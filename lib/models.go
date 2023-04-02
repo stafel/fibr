@@ -6,6 +6,8 @@ import (
 
 // Language
 type LanguageModel struct {
+	// Flag if model is enabled
+	enabled bool `yaml:"enabled"`
 	// Name of the language model (e.g Alpaca.7B)
 	name string `yaml:"name"`
 	// URL to download this language model
@@ -36,6 +38,6 @@ func (model *LanguageModel) downloadTorrent() error {
 	if model.magnet == "" {
 		return nil
 	} else {
-		return fmt.Errorf("Language model: %s does not contain a torrent link", model.name)
+		return fmt.Errorf("language model: %s does not contain a torrent link", model.name)
 	}
 }
